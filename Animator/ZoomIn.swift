@@ -8,57 +8,25 @@
 
 import UIKit
 
-class ZoomOut: BaseAnimate{
-    var transfrom:CATransform3D = CATransform3DIdentity
+class ZoomIn: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
+        view.alpha = 0
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.transform = CGAffineTransformMakeScale(0.3, 0.3)
-            view.alpha = 0
+            view.alpha = 1
         });
     }
 }
 
-class ZoomOutDown: BaseAnimate{
-    var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+class ZoomInDown: BaseAnimate{
 
-        let d1 = duration * 0.4
-        let d2 = duration * 0.6
-        
-        
-        Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.550, 0.055, 0.675, 0.190),
-        duration: d1,
-        endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 0, -60, 0),
-        endOpacity: 1.0,
-        finish: {_ in
-            
-            let p = view.layer.anchorPoint
-            
-            view.layer.anchorPoint = CGPointMake(0.5, 1.0)
-            Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
-                duration: d2,
-                endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.1, 0.1, 0.1), 0, 1000, 0),
-                endOpacity: 0.0,
-                finish: {_ in
-                    
- 
-            })
-        })
-        
-
-        
-    }
-}
-
-
-
-class ZoomOutUp: BaseAnimate{
-    var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         
-        let d1 = duration * 0.4
-        let d2 = duration * 0.6
-        
+        let d1 = duration * 0.6
+        let d2 = duration * 0.4
+        view.alpha = 0
+        view.layer.transform =  CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 0, -1000, 0)
+
         
         Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.550, 0.055, 0.675, 0.190),
             duration: d1,
@@ -66,13 +34,12 @@ class ZoomOutUp: BaseAnimate{
             endOpacity: 1.0,
             finish: {_ in
                 
-                let p = view.layer.anchorPoint
                 
-                view.layer.anchorPoint = CGPointMake(0.5, 1.0)
+                
                 Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
                     duration: d2,
-                    endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.1, 0.1, 0.1), 0, -1000, 0),
-                    endOpacity: 0.0,
+                    endTransform: CATransform3DIdentity,
+                    endOpacity: 1.0,
                     finish: {_ in
                         
                         
@@ -86,30 +53,29 @@ class ZoomOutUp: BaseAnimate{
 
 
 
-class ZoomOutLeft: BaseAnimate {
+class ZoomInUp: BaseAnimate{
+    
     override func play(view: UIView, type: String, duration: Double) {
         
-        let d1 = duration * 0.4
-        let d2 = duration * 0.6
+        let d1 = duration * 0.6
+        let d2 = duration * 0.4
+        view.alpha = 0
+        view.layer.transform =  CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 0, 1000, 0)
         
         
-        Animator.curveAnimate(view, timing: Animator.getTimingFunction(""),
+        Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.550, 0.055, 0.675, 0.190),
             duration: d1,
-            endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 20, 0, 0),
+            endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 0, -60, 0),
             endOpacity: 1.0,
             finish: {_ in
                 
-                let p = view.layer.anchorPoint
                 
-                view.layer.anchorPoint = CGPointMake(0.0, 0.5)
                 
-                Animator.curveAnimate(view, timing: Animator.getTimingFunction(""),
+                Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
                     duration: d2,
-                    endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.1, 0.1, 0.1), -1000, 0, 0),
-                    endOpacity: 0.0,
+                    endTransform: CATransform3DIdentity,
+                    endOpacity: 1.0,
                     finish: {_ in
-                        
-                        view.layer.anchorPoint = p
                         
                         
                 })
@@ -122,30 +88,63 @@ class ZoomOutLeft: BaseAnimate {
 
 
 
-class ZoomOutRight: BaseAnimate {
+class ZoomInLeft: BaseAnimate{
+    
     override func play(view: UIView, type: String, duration: Double) {
         
-        let d1 = duration * 0.4
-        let d2 = duration * 0.6
+        let d1 = duration * 0.6
+        let d2 = duration * 0.4
+        view.alpha = 0
+        view.layer.transform =  CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), -1000, 0,  0)
         
         
-        Animator.curveAnimate(view, timing: Animator.getTimingFunction(""),
+        Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.550, 0.055, 0.675, 0.190),
             duration: d1,
-            endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), -20, 0, 0),
+            endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 10, 0, 0),
             endOpacity: 1.0,
             finish: {_ in
                 
-                let p = view.layer.anchorPoint
                 
-                view.layer.anchorPoint = CGPointMake(0.0, 0.5)
                 
-                Animator.curveAnimate(view, timing: Animator.getTimingFunction(""),
+                Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
                     duration: d2,
-                    endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.1, 0.1, 0.1), 1000, 0, 0),
-                    endOpacity: 0.0,
+                    endTransform: CATransform3DIdentity,
+                    endOpacity: 1.0,
                     finish: {_ in
                         
-                        view.layer.anchorPoint = p
+                        
+                })
+        })
+        
+        
+        
+    }
+}
+
+
+class ZoomInRight: BaseAnimate{
+    
+    override func play(view: UIView, type: String, duration: Double) {
+        
+        let d1 = duration * 0.6
+        let d2 = duration * 0.4
+        view.alpha = 0
+        view.layer.transform =  CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), 1000, 0,  0)
+        
+        
+        Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.550, 0.055, 0.675, 0.190),
+            duration: d1,
+            endTransform: CATransform3DTranslate(CATransform3DMakeScale(0.475, 0.475, 0.475), -10, 0, 0),
+            endOpacity: 1.0,
+            finish: {_ in
+                
+                
+                
+                Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
+                    duration: d2,
+                    endTransform: CATransform3DIdentity,
+                    endOpacity: 1.0,
+                    finish: {_ in
                         
                         
                 })

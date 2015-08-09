@@ -56,32 +56,34 @@ class ViewController: UIViewController {
         
         
     
-        var transform = CATransform3DIdentity
-        transform = CATransform3DRotate(transform, CGFloat(M_PI / 12.0), (-1), (0.0), (0.0));
-        transform.m34 = -1 / 600.0
-        let timing = Animator.getTimingFunction("ease")
-        self.view.layer.shadowColor = UIColor.redColor().CGColor
-        self.view.layer.shadowOffset = CGSizeMake(10, 10)
-        self.view.layer.shadowRadius = 2;
+//        var transform = CATransform3DIdentity
+//        transform = CATransform3DRotate(transform, CGFloat(M_PI / 12.0), (-1), (0.0), (0.0));
+//        transform.m34 = -1 / 600.0
+//        let timing = Animator.getTimingFunction("ease")
+//        self.view.layer.shadowColor = UIColor.redColor().CGColor
+//        self.view.layer.shadowOffset = CGSizeMake(10, 10)
+//        self.view.layer.shadowRadius = 2;
+//        
+//        self.view.layer.masksToBounds = true;
+//        
+//        let radius = CGRectGetWidth(view.bounds)/2.0;
+//        self.view.layer.shouldRasterize = true
+//
+//      
+//        myView.layer.shadowColor = UIColor.redColor().CGColor
+//        myView.layer.shadowOffset = CGSizeMake(20, 20)
+//        myView.layer.shadowRadius = 20;
+//        myView.layer.shadowOpacity = 0.5;
+//        
+//    
+//
+//        myView.layer.borderWidth = 14.0
+//        
+//        myView.layer.masksToBounds = true;
+//        
+//        myView.layer.shouldRasterize = true
         
-        self.view.layer.masksToBounds = true;
-        
-        let radius = CGRectGetWidth(view.bounds)/2.0;
-        self.view.layer.shouldRasterize = true
-
-      
-        myView.layer.shadowColor = UIColor.redColor().CGColor
-        myView.layer.shadowOffset = CGSizeMake(20, 20)
-        myView.layer.shadowRadius = 20;
-        myView.layer.shadowOpacity = 0.5;
-        
-    
-
-        myView.layer.borderWidth = 14.0
-        
-        myView.layer.masksToBounds = true;
-        
-        myView.layer.shouldRasterize = true
+        ZoomInRight().play(myView, duration: 1.2)
 
 
        // Animator.curveAnimate(self.view, timing: timing, startTransform: CATransform3DIdentity, startOpacity: 1.0, duration: 0.6, endTransform: transform, endOpacity: 1.0)
@@ -89,22 +91,22 @@ class ViewController: UIViewController {
 
 
         
-        presentViewController(alert, animated: false, completion: {
-        finish in
-
-            alert.view.transform = CGAffineTransformMakeScale(0.4, 0.4)
-
-   
-                    UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveLinear, animations: {
-                        
-                        alert.view.alpha = 1
-                        alert.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
-                        
-                        
-
-                        
-                        }, completion: nil)
-        })
+//        presentViewController(alert, animated: false, completion: {
+//        finish in
+//
+//            alert.view.transform = CGAffineTransformMakeScale(0.4, 0.4)
+//
+//   
+//                    UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveLinear, animations: {
+//                        
+//                        alert.view.alpha = 1
+//                        alert.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+//                        
+//                        
+//
+//                        
+//                        }, completion: nil)
+//        })
     }
     
      func simplifiedflyAnimate(cell: UIView){

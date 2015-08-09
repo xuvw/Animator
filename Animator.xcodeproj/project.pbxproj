@@ -19,6 +19,7 @@
 		C5D3BBD31B771FC100374D49 /* SlideIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCF1B771FC100374D49 /* SlideIn.swift */; };
 		C5D3BBD41B771FC100374D49 /* SlideOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBD01B771FC100374D49 /* SlideOut.swift */; };
 		C5D3BBD71B77226300374D49 /* ZoomOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBD61B77226300374D49 /* ZoomOut.swift */; };
+		C5D3BBD91B77321300374D49 /* ZoomIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBD81B77321300374D49 /* ZoomIn.swift */; };
 		C5D65D6F1B7432D600B09DA7 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D65D6E1B7432D600B09DA7 /* Translation.swift */; };
 		C5D65D711B7433EB00B09DA7 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D65D701B7433EB00B09DA7 /* UIView+Animation.swift */; };
 		C5D65D731B743DAF00B09DA7 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D65D721B743DAF00B09DA7 /* BubbleTransition.swift */; };
@@ -51,6 +52,7 @@
 		C5D3BBCF1B771FC100374D49 /* SlideIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideIn.swift; sourceTree = "<group>"; };
 		C5D3BBD01B771FC100374D49 /* SlideOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOut.swift; sourceTree = "<group>"; };
 		C5D3BBD61B77226300374D49 /* ZoomOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomOut.swift; sourceTree = "<group>"; };
+		C5D3BBD81B77321300374D49 /* ZoomIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomIn.swift; sourceTree = "<group>"; };
 		C5D65D6E1B7432D600B09DA7 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		C5D65D701B7433EB00B09DA7 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		C5D65D721B743DAF00B09DA7 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTransition.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				C5D3BBCE1B771FC100374D49 /* FadeOut.swift */,
 				C5D3BBCF1B771FC100374D49 /* SlideIn.swift */,
 				C5D3BBD01B771FC100374D49 /* SlideOut.swift */,
+				C5D3BBD81B77321300374D49 /* ZoomIn.swift */,
 			);
 			name = AnimateCollection;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				C522D7121B71046200B78A9C /* AppDelegate.swift in Sources */,
 				C5D65D6F1B7432D600B09DA7 /* Translation.swift in Sources */,
 				C5D3BBD71B77226300374D49 /* ZoomOut.swift in Sources */,
+				C5D3BBD91B77321300374D49 /* ZoomIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
