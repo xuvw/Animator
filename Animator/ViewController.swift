@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 //        
 //        myView.layer.shouldRasterize = true
         
-        RotateOutDownLeft().play(myView, duration: 1.2)
+        RotateOutUpRight().play(myView, duration: 1.2)
 
 
        // Animator.curveAnimate(self.view, timing: timing, startTransform: CATransform3DIdentity, startOpacity: 1.0, duration: 0.6, endTransform: transform, endOpacity: 1.0)
