@@ -84,7 +84,7 @@ class ViewController: UIViewController {
 //        myView.layer.shouldRasterize = true
         
        // BounceOutUp().play(myView, duration: 0.6)
-        Speed().play(myView, type: "out", duration: 0.6)
+        Hinge().play(myView, type: "out", duration: 2.0)
         
        // Animator.curveAnimate(self.view, timing: timing, startTransform: CATransform3DIdentity, startOpacity: 1.0, duration: 0.6, endTransform: transform, endOpacity: 1.0)
 

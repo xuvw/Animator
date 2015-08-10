@@ -13,6 +13,7 @@
 		C51D72361B77876D0028BD27 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D72341B77876D0028BD27 /* SpringView.swift */; };
 		C51D72381B7787D20028BD27 /* Attention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D72371B7787D20028BD27 /* Attention.swift */; };
 		C51D723A1B778A6E0028BD27 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D72391B778A6E0028BD27 /* Speed.swift */; };
+		C51D723C1B7840D50028BD27 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D723B1B7840D50028BD27 /* Special.swift */; };
 		C522D7121B71046200B78A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7111B71046200B78A9C /* AppDelegate.swift */; };
 		C522D7141B71046200B78A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7131B71046200B78A9C /* ViewController.swift */; };
 		C522D7171B71046200B78A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C522D7151B71046200B78A9C /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		C51D72341B77876D0028BD27 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
 		C51D72371B7787D20028BD27 /* Attention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attention.swift; sourceTree = "<group>"; };
 		C51D72391B778A6E0028BD27 /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		C51D723B1B7840D50028BD27 /* Special.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
 		C522D70C1B71046200B78A9C /* Animator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C522D7101B71046200B78A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C522D7111B71046200B78A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				C51D72311B777EBA0028BD27 /* BounceIn.swift */,
 				C51D72371B7787D20028BD27 /* Attention.swift */,
 				C51D72391B778A6E0028BD27 /* Speed.swift */,
+				C51D723B1B7840D50028BD27 /* Special.swift */,
 			);
 			name = AnimateCollection;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				C522D7321B71048A00B78A9C /* Animator.swift in Sources */,
 				C5D3BBD31B771FC100374D49 /* SlideIn.swift in Sources */,
 				C522D7141B71046200B78A9C /* ViewController.swift in Sources */,
+				C51D723C1B7840D50028BD27 /* Special.swift in Sources */,
 				C51D72301B7779C10028BD27 /* Flip.swift in Sources */,
 				C5D3BBD41B771FC100374D49 /* SlideOut.swift in Sources */,
 				C5D65D711B7433EB00B09DA7 /* UIView+Animation.swift in Sources */,
