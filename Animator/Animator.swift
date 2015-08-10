@@ -568,3 +568,16 @@ extension UIView {
     }
 }
 
+
+
+
+class Motion {
+    var duration : Double?
+    var transform : CATransform3D?
+    var alpha: Double?
+    var ease: CAMediaTimingFunction?
+    
+   
+    
+}
+
