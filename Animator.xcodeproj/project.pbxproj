@@ -22,6 +22,9 @@
 		C522D7281B71046200B78A9C /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7271B71046200B78A9C /* AnimatorTests.swift */; };
 		C522D7321B71048A00B78A9C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7311B71048A00B78A9C /* Animator.swift */; };
 		C5B3CB1B1B790EAB00A74D22 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1A1B790EAB00A74D22 /* Animate.swift */; };
+		C5B3CB1D1B790FE100A74D22 /* Ani.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1C1B790FE100A74D22 /* Ani.swift */; };
+		C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */; };
+		C5B3CB211B79107400A74D22 /* ScalaAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB201B79107400A74D22 /* ScalaAnimate.swift */; };
 		C5D3BBD11B771FC100374D49 /* FadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCD1B771FC100374D49 /* FadeIn.swift */; };
 		C5D3BBD21B771FC100374D49 /* FadeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCE1B771FC100374D49 /* FadeOut.swift */; };
 		C5D3BBD31B771FC100374D49 /* SlideIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCF1B771FC100374D49 /* SlideIn.swift */; };
@@ -65,6 +68,9 @@
 		C522D7271B71046200B78A9C /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
 		C522D7311B71048A00B78A9C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		C5B3CB1A1B790EAB00A74D22 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
+		C5B3CB1C1B790FE100A74D22 /* Ani.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ani.swift; sourceTree = "<group>"; };
+		C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimate.swift; sourceTree = "<group>"; };
+		C5B3CB201B79107400A74D22 /* ScalaAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalaAnimate.swift; sourceTree = "<group>"; };
 		C5D3BBCD1B771FC100374D49 /* FadeIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeIn.swift; sourceTree = "<group>"; };
 		C5D3BBCE1B771FC100374D49 /* FadeOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOut.swift; sourceTree = "<group>"; };
 		C5D3BBCF1B771FC100374D49 /* SlideIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideIn.swift; sourceTree = "<group>"; };
@@ -186,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				C522D7311B71048A00B78A9C /* Animator.swift */,
+				C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */,
+				C5B3CB201B79107400A74D22 /* ScalaAnimate.swift */,
+				C5B3CB1C1B790FE100A74D22 /* Ani.swift */,
 				C5B3CB1A1B790EAB00A74D22 /* Animate.swift */,
 				C5D65D701B7433EB00B09DA7 /* UIView+Animation.swift */,
 			);
@@ -315,6 +324,7 @@
 			files = (
 				C5D3BBDD1B7736C500374D49 /* RotateIn.swift in Sources */,
 				C5D3BBD21B771FC100374D49 /* FadeOut.swift in Sources */,
+				C5B3CB211B79107400A74D22 /* ScalaAnimate.swift in Sources */,
 				C51D72381B7787D20028BD27 /* Attention.swift in Sources */,
 				C51D723A1B778A6E0028BD27 /* Speed.swift in Sources */,
 				C5D3BBD11B771FC100374D49 /* FadeIn.swift in Sources */,
@@ -327,11 +337,13 @@
 				C5D3BBD41B771FC100374D49 /* SlideOut.swift in Sources */,
 				C5D65D711B7433EB00B09DA7 /* UIView+Animation.swift in Sources */,
 				C522D7121B71046200B78A9C /* AppDelegate.swift in Sources */,
+				C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */,
 				C51D72361B77876D0028BD27 /* SpringView.swift in Sources */,
 				C5D65D6F1B7432D600B09DA7 /* Translation.swift in Sources */,
 				C51D72351B77876D0028BD27 /* Spring.swift in Sources */,
 				C51D72321B777EBA0028BD27 /* BounceIn.swift in Sources */,
 				C5D3BBD71B77226300374D49 /* ZoomOut.swift in Sources */,
+				C5B3CB1D1B790FE100A74D22 /* Ani.swift in Sources */,
 				C5D3BBD91B77321300374D49 /* ZoomIn.swift in Sources */,
 				C5D3BBDF1B773A1E00374D49 /* RotateOut.swift in Sources */,
 				C5B3CB1B1B790EAB00A74D22 /* Animate.swift in Sources */,
