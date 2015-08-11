@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
 
     @IBOutlet weak var yourView: UIView!
     @IBOutlet weak var myView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.transitioningDelegate = self;
         // Do any additional setup after loading the view, typically from a nib.
         //Animator.transFrom(myView, transform: CATransform3DMakeScale(3, 3, 3))
       //  Animator.customTimingTrans(myView, time: "easeInCirc", transform: CATransform3DMakeScale(3, 3, 3))
@@ -84,8 +85,8 @@ class ViewController: UIViewController {
 //        myView.layer.shouldRasterize = true
         
        // BounceOutUp().play(myView, duration: 0.6)
-        Hinge().play(myView, type: "out", duration: 2.0)
-        
+        //Hinge().play(myView, type: "out", duration: 2.0)
+        myView.layer.position = CGPointMake(30, 20);
        // Animator.curveAnimate(self.view, timing: timing, startTransform: CATransform3DIdentity, startOpacity: 1.0, duration: 0.6, endTransform: transform, endOpacity: 1.0)
 
 
@@ -124,6 +125,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+
+    
+    let Trans = TranslationDelegate()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+            let toViewController = segue.destinationViewController as! UIViewController
+            toViewController.transitioningDelegate = Trans
     }
 
 
