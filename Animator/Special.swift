@@ -16,12 +16,7 @@ class RollOut: BaseAnimate {
         
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: t2, endOpacity: 0.0) { (finished) -> Void in
         };
-        
-        
-        
-        
-        
-        
+  
     }
 
 
@@ -38,10 +33,7 @@ class RollIn: BaseAnimate {
         
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finished) -> Void in
         };
-        
-        
-        
-        
+
     }
     
     
