@@ -8,8 +8,13 @@
 
 import UIKit
 
-class AnotherViewController: UIViewController {
+class AnotherViewController: UITableViewController {
 
+    @IBAction func buttonTap(sender: AnyObject) {
+        self.navigationController?.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

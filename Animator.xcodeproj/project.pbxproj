@@ -26,6 +26,7 @@
 		C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */; };
 		C5B3CB211B79107400A74D22 /* ScalaAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB201B79107400A74D22 /* ScalaAnimate.swift */; };
 		C5BFB9351B7A22F800B318DB /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */; };
+		C5BFB9391B7A3B0300B318DB /* NavTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BFB9381B7A3B0300B318DB /* NavTrans.swift */; };
 		C5D3BBD11B771FC100374D49 /* FadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCD1B771FC100374D49 /* FadeIn.swift */; };
 		C5D3BBD21B771FC100374D49 /* FadeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCE1B771FC100374D49 /* FadeOut.swift */; };
 		C5D3BBD31B771FC100374D49 /* SlideIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCF1B771FC100374D49 /* SlideIn.swift */; };
@@ -73,6 +74,7 @@
 		C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimate.swift; sourceTree = "<group>"; };
 		C5B3CB201B79107400A74D22 /* ScalaAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalaAnimate.swift; sourceTree = "<group>"; };
 		C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		C5BFB9381B7A3B0300B318DB /* NavTrans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTrans.swift; sourceTree = "<group>"; };
 		C5D3BBCD1B771FC100374D49 /* FadeIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeIn.swift; sourceTree = "<group>"; };
 		C5D3BBCE1B771FC100374D49 /* FadeOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOut.swift; sourceTree = "<group>"; };
 		C5D3BBCF1B771FC100374D49 /* SlideIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideIn.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				C522D7111B71046200B78A9C /* AppDelegate.swift */,
 				C522D7131B71046200B78A9C /* ViewController.swift */,
 				C522D7151B71046200B78A9C /* Main.storyboard */,
+				C5BFB9381B7A3B0300B318DB /* NavTrans.swift */,
 				C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */,
 				C522D7181B71046200B78A9C /* Images.xcassets */,
 				C522D71A1B71046200B78A9C /* LaunchScreen.xib */,
@@ -338,6 +341,7 @@
 				C51D723C1B7840D50028BD27 /* Special.swift in Sources */,
 				C51D72301B7779C10028BD27 /* Flip.swift in Sources */,
 				C5D3BBD41B771FC100374D49 /* SlideOut.swift in Sources */,
+				C5BFB9391B7A3B0300B318DB /* NavTrans.swift in Sources */,
 				C5D65D711B7433EB00B09DA7 /* UIView+Animation.swift in Sources */,
 				C5BFB9351B7A22F800B318DB /* AnotherViewController.swift in Sources */,
 				C522D7121B71046200B78A9C /* AppDelegate.swift in Sources */,

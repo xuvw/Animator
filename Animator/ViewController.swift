@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
+    
+    
+    @IBOutlet weak var myViewCons: NSLayoutConstraint!
+ 
+    
 
     @IBOutlet weak var yourView: UIView!
     @IBOutlet weak var myView: UIView!
@@ -86,7 +91,31 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
         
        // BounceOutUp().play(myView, duration: 0.6)
         //Hinge().play(myView, type: "out", duration: 2.0)
-        myView.layer.position = CGPointMake(30, 20);
+      //  myView.layer.position = CGPointMake(30, 20);
+        
+        
+        //UIView.animateWithDuration(1.0, delay: 1.0, options: .TransitionFlipFromBottom , animations: { () -> Void in
+//            self.myView.removeFromSuperview()
+//        }) { (finish) -> Void in
+//            
+//        };
+        
+        
+//        UIView.transitionWithView(self.view!, duration: 1.0, options: .CurveEaseOut | .TransitionCrossDissolve, animations: { () -> Void in
+//            
+//            self.myView.removeFromSuperview();
+//            
+//        }) { (fninish) -> Void in
+//        
+//        };
+        
+        
+        myViewCons.constant == 400.0;
+        UIView.animateWithDuration(1.0, delay: 2.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 10, options: .CurveEaseIn , animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            }) { (finish) -> Void in
+                
+        };
        // Animator.curveAnimate(self.view, timing: timing, startTransform: CATransform3DIdentity, startOpacity: 1.0, duration: 0.6, endTransform: transform, endOpacity: 1.0)
 
 
@@ -120,6 +149,9 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
         
         
         Animator.curveAnimate(cell, timing: timing, startTransform: transform, startOpacity: 1.0, duration: 0.3, endTransform: CATransform3DIdentity, endOpacity: 1.0)
+        
+        
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -137,6 +169,8 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
             let toViewController = segue.destinationViewController as! UIViewController
             toViewController.transitioningDelegate = Trans
     }
+    
+    
 
 
 }

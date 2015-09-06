@@ -51,7 +51,6 @@ class RotateOutUpLeft: BaseAnimate{
             // view.layer.anchorPoint = p
             
         }
-        
     }
 }
 
