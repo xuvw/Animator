@@ -8,17 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
+class ViewController: UIViewController {
     
-    
- 
     
 
     @IBOutlet weak var yourView: UIView!
     @IBOutlet weak var myView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.transitioningDelegate = self;
    
 
     }
@@ -26,7 +24,8 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-     
+        let f = FadeInDownEffect()
+        f.play(myView)
 
     }
 

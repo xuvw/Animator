@@ -10,9 +10,8 @@ import Foundation
 // 光圈，飞驰，擦除，
 // 每一个还有一个单独的属性是不是更好
 
-let fade = FadeEffect()
-fade.duration = 33;
-fade.play(xxx)
+//let fade = FadeEffect()
+//fade.duration = 33;
+//fade.play(xxx)
 
-duration
 
