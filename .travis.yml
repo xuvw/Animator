@@ -1,0 +1,9 @@
+language: objective-c
+branches:
+ only:
+ - master
+xcode_project: Animator.xcodeproj
+xcode_scheme: Animator
+osx_image: xcode7.1
+script:
+- xcodebuild clean build  -project Animator.xcodeproj -scheme Animator
