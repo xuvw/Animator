@@ -21,7 +21,7 @@
 		C522D71C1B71046200B78A9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C522D71A1B71046200B78A9C /* LaunchScreen.xib */; };
 		C522D7321B71048A00B78A9C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7311B71048A00B78A9C /* Animator.swift */; };
 		C528B8E61BE7372500A68C10 /* CellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528B8E51BE7372500A68C10 /* CellAnimator.swift */; settings = {ASSET_TAGS = (); }; };
-		C528B8EE1BE73C6600A68C10 /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528B8ED1BE73C6600A68C10 /* AnimatorTests.swift */; };
+		C528B8FC1BE7445600A68C10 /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528B8FB1BE7445600A68C10 /* AnimatorTests.swift */; };
 		C5B3CB1D1B790FE100A74D22 /* Ani.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1C1B790FE100A74D22 /* Ani.swift */; };
 		C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */; };
 		C5C815BA1B9C332900903C12 /* CAMediaTimingFunction+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */; };
@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C528B8F01BE73C6600A68C10 /* PBXContainerItemProxy */ = {
+		C528B8FE1BE7445600A68C10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C522D7041B71046200B78A9C /* Project object */;
 			proxyType = 1;
@@ -65,9 +65,9 @@
 		C522D71B1B71046200B78A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C522D7311B71048A00B78A9C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		C528B8E51BE7372500A68C10 /* CellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAnimator.swift; sourceTree = "<group>"; };
-		C528B8EB1BE73C6600A68C10 /* AnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C528B8ED1BE73C6600A68C10 /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
-		C528B8EF1BE73C6600A68C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C528B8F91BE7445600A68C10 /* AnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C528B8FB1BE7445600A68C10 /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
+		C528B8FD1BE7445600A68C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B3CB1C1B790FE100A74D22 /* Ani.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ani.swift; sourceTree = "<group>"; };
 		C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimate.swift; sourceTree = "<group>"; };
 		C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Timing.swift"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C528B8E81BE73C6600A68C10 /* Frameworks */ = {
+		C528B8F61BE7445600A68C10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C522D70E1B71046200B78A9C /* Animator */,
-				C528B8EC1BE73C6600A68C10 /* AnimatorTests */,
+				C528B8FA1BE7445600A68C10 /* AnimatorTests */,
 				C522D70D1B71046200B78A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C522D70C1B71046200B78A9C /* Animator.app */,
-				C528B8EB1BE73C6600A68C10 /* AnimatorTests.xctest */,
+				C528B8F91BE7445600A68C10 /* AnimatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,11 +144,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C528B8EC1BE73C6600A68C10 /* AnimatorTests */ = {
+		C528B8FA1BE7445600A68C10 /* AnimatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				C528B8ED1BE73C6600A68C10 /* AnimatorTests.swift */,
-				C528B8EF1BE73C6600A68C10 /* Info.plist */,
+				C528B8FB1BE7445600A68C10 /* AnimatorTests.swift */,
+				C528B8FD1BE7445600A68C10 /* Info.plist */,
 			);
 			path = AnimatorTests;
 			sourceTree = "<group>";
@@ -217,22 +217,22 @@
 			productReference = C522D70C1B71046200B78A9C /* Animator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C528B8EA1BE73C6600A68C10 /* AnimatorTests */ = {
+		C528B8F81BE7445600A68C10 /* AnimatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C528B8F21BE73C6600A68C10 /* Build configuration list for PBXNativeTarget "AnimatorTests" */;
+			buildConfigurationList = C528B9001BE7445600A68C10 /* Build configuration list for PBXNativeTarget "AnimatorTests" */;
 			buildPhases = (
-				C528B8E71BE73C6600A68C10 /* Sources */,
-				C528B8E81BE73C6600A68C10 /* Frameworks */,
-				C528B8E91BE73C6600A68C10 /* Resources */,
+				C528B8F51BE7445600A68C10 /* Sources */,
+				C528B8F61BE7445600A68C10 /* Frameworks */,
+				C528B8F71BE7445600A68C10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C528B8F11BE73C6600A68C10 /* PBXTargetDependency */,
+				C528B8FF1BE7445600A68C10 /* PBXTargetDependency */,
 			);
 			name = AnimatorTests;
 			productName = AnimatorTests;
-			productReference = C528B8EB1BE73C6600A68C10 /* AnimatorTests.xctest */;
+			productReference = C528B8F91BE7445600A68C10 /* AnimatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +248,7 @@
 					C522D70B1B71046200B78A9C = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					C528B8EA1BE73C6600A68C10 = {
+					C528B8F81BE7445600A68C10 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = C522D70B1B71046200B78A9C;
 					};
@@ -268,7 +268,7 @@
 			projectRoot = "";
 			targets = (
 				C522D70B1B71046200B78A9C /* Animator */,
-				C528B8EA1BE73C6600A68C10 /* AnimatorTests */,
+				C528B8F81BE7445600A68C10 /* AnimatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C528B8E91BE73C6600A68C10 /* Resources */ = {
+		C528B8F71BE7445600A68C10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,21 +326,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C528B8E71BE73C6600A68C10 /* Sources */ = {
+		C528B8F51BE7445600A68C10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C528B8EE1BE73C6600A68C10 /* AnimatorTests.swift in Sources */,
+				C528B8FC1BE7445600A68C10 /* AnimatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C528B8F11BE73C6600A68C10 /* PBXTargetDependency */ = {
+		C528B8FF1BE7445600A68C10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C522D70B1B71046200B78A9C /* Animator */;
-			targetProxy = C528B8F01BE73C6600A68C10 /* PBXContainerItemProxy */;
+			targetProxy = C528B8FE1BE7445600A68C10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,7 +468,7 @@
 			};
 			name = Release;
 		};
-		C528B8F31BE73C6600A68C10 /* Debug */ = {
+		C528B9011BE7445600A68C10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		C528B8F41BE73C6600A68C10 /* Release */ = {
+		C528B9021BE7445600A68C10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,11 +516,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C528B8F21BE73C6600A68C10 /* Build configuration list for PBXNativeTarget "AnimatorTests" */ = {
+		C528B9001BE7445600A68C10 /* Build configuration list for PBXNativeTarget "AnimatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C528B8F31BE73C6600A68C10 /* Debug */,
-				C528B8F41BE73C6600A68C10 /* Release */,
+				C528B9011BE7445600A68C10 /* Debug */,
+				C528B9021BE7445600A68C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

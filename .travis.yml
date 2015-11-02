@@ -6,4 +6,4 @@ xcode_project: Animator.xcodeproj
 xcode_scheme: Animator
 osx_image: xcode7
 script:
- - xcodebuild build test -project Animator.xcodeproj -scheme Animator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xctool clean build test -project Animator.xcodeproj -scheme Animator -destination name="iPhone 5s" -sdk iphonesimulator
