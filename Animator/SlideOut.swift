@@ -10,7 +10,7 @@ import UIKit
 
 //MARK: SideOut
 
-class SlideOutDown: BaseAnimate{
+public class SlideOutDown: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, view.frame.height, 0);
@@ -22,7 +22,7 @@ class SlideOutDown: BaseAnimate{
 
 
 
-class SlideOutLeft: BaseAnimate{
+public class SlideOutLeft: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width, 0, 0);
@@ -33,7 +33,7 @@ class SlideOutLeft: BaseAnimate{
 }
 
 
-class SlideOutRight: BaseAnimate{
+public class SlideOutRight: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width, 0, 0);
@@ -44,7 +44,7 @@ class SlideOutRight: BaseAnimate{
 }
 
 
-class SlideOutUp: BaseAnimate{
+public class SlideOutUp: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, -view.frame.height, 0);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Attention: BaseAnimate {
+public class Attention: BaseAnimate {
     
    
     override func play(view: UIView, type: String, duration: Double) {

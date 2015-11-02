@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Flip: BaseAnimate{
+public class Flip: BaseAnimate{
    
     override func play(view: UIView, type: String, duration: Double) {
         
@@ -29,7 +29,7 @@ class Flip: BaseAnimate{
 }
 
 
-class FlipX: BaseAnimate{
+public class FlipX: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
     
         var transform = CATransform3DIdentity
@@ -50,7 +50,7 @@ class FlipX: BaseAnimate{
 
 
 
-class FlipY: BaseAnimate{
+public class FlipY: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         
         var transform = CATransform3DIdentity
@@ -69,7 +69,7 @@ class FlipY: BaseAnimate{
 
 
 
-class FlipOutX: BaseAnimate{
+public class FlipOutX: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.3
@@ -101,7 +101,7 @@ class FlipOutX: BaseAnimate{
 
 
 
-class FlipOutY: BaseAnimate{
+public class FlipOutY: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.3

@@ -10,7 +10,7 @@ import UIKit
 //MARK: FadeOut
 
 
-class FadeOutAnimate: BaseAnimate{
+public class FadeOutAnimate: BaseAnimate{
     var force: CGFloat = 1.0
     var forceBig: CGFloat = 10.0
     var transfrom:CATransform3D = CATransform3DIdentity
@@ -25,7 +25,7 @@ class FadeOutAnimate: BaseAnimate{
 }
 
 
-class FadeOutDownAnimate: FadeOutAnimate{
+public class FadeOutDownAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(0.0, (view.frame.height * force), 0.0)
         super.play(view, type: type, duration: duration);
@@ -33,7 +33,7 @@ class FadeOutDownAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutDownBigAnimate: FadeOutAnimate{
+public class FadeOutDownBigAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(0.0, (view.frame.height * forceBig), 0.0)
         super.play(view, type: type, duration: duration);
@@ -41,7 +41,7 @@ class FadeOutDownBigAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutLeftAnimate: FadeOutAnimate{
+public class FadeOutLeftAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(-1.0 * (view.frame.width * force), 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -49,7 +49,7 @@ class FadeOutLeftAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutLeftBigAnimate: FadeOutAnimate{
+public class FadeOutLeftBigAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation((-1.0 * view.frame.width * forceBig), 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -57,7 +57,7 @@ class FadeOutLeftBigAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutRightAnimate: FadeOutAnimate{
+public class FadeOutRightAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(view.frame.width * force, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -65,7 +65,7 @@ class FadeOutRightAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutRightBigAnimate: FadeOutAnimate{
+public class FadeOutRightBigAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(view.frame.width * forceBig, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -74,7 +74,7 @@ class FadeOutRightBigAnimate: FadeOutAnimate{
 
 
 
-class FadeOutUpAnimate: FadeOutAnimate{
+public class FadeOutUpAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(0.0, -1 * (view.frame.height * force), 0)
         super.play(view, type: type, duration: duration);
@@ -82,7 +82,7 @@ class FadeOutUpAnimate: FadeOutAnimate{
 }
 
 
-class FadeOutUpBigAnimate: FadeOutAnimate{
+public class FadeOutUpBigAnimate: FadeOutAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         self.transfrom = CATransform3DMakeTranslation(0.0, -1 * (view.frame.height * forceBig), 0)
         super.play(view, type: type, duration: duration);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZoomOut: BaseAnimate{
+public class ZoomOut: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         UIView.animateWithDuration(duration, animations: { () -> Void in
@@ -18,7 +18,7 @@ class ZoomOut: BaseAnimate{
     }
 }
 
-class ZoomOutDown: BaseAnimate{
+public class ZoomOutDown: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
 
@@ -86,7 +86,7 @@ class ZoomOutUp: BaseAnimate{
 
 
 
-class ZoomOutLeft: BaseAnimate {
+public class ZoomOutLeft: BaseAnimate {
     override func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
@@ -122,7 +122,7 @@ class ZoomOutLeft: BaseAnimate {
 
 
 
-class ZoomOutRight: BaseAnimate {
+public class ZoomOutRight: BaseAnimate {
     override func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4

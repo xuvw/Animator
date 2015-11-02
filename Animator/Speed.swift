@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Speed: BaseAnimate {
+public class Speed: BaseAnimate {
     
     override func play(view: UIView, type: String, duration: Double) {
         //let force = 0.5

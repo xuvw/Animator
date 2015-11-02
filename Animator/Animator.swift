@@ -14,7 +14,7 @@ import UIKit
 
 // 动画 Util
 
-class Animator: NSObject {
+public class Animator: NSObject {
 
     
     // 用一个 Ani 对象来播放动画

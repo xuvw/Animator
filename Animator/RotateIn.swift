@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RotateIn: BaseAnimate{
+public class RotateIn: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
@@ -18,7 +18,7 @@ class RotateIn: BaseAnimate{
         
     }
 }
-class RotateInDownLeft: BaseAnimate{
+public class RotateInDownLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
@@ -30,7 +30,7 @@ class RotateInDownLeft: BaseAnimate{
         
     }
 }
-class RotateInDownRight: BaseAnimate{
+public class RotateInDownRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(1.0, 1.0))
@@ -62,7 +62,7 @@ class RotateInDownRight: BaseAnimate{
 //}
 
 
-class RotateInUpLeft: BaseAnimate{
+public class RotateInUpLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
@@ -76,7 +76,7 @@ class RotateInUpLeft: BaseAnimate{
 }
 
 
-class RotateInUpRight: BaseAnimate{
+public class RotateInUpRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(1.0, 1.0))

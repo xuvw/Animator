@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RotateOut: BaseAnimate{
+public class RotateOut: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         let transform = CATransform3DMakeRotation( CGFloat(M_PI * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in
@@ -17,7 +17,7 @@ class RotateOut: BaseAnimate{
         
     }
 }
-class RotateOutDownLeft: BaseAnimate{
+public class RotateOutDownLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
       //  let p =  view.layer.anchorPoint
         view.setAnchorPoint (CGPointMake(0.0, 1.0))
@@ -29,7 +29,7 @@ class RotateOutDownLeft: BaseAnimate{
         
     }
 }
-class RotateOutDownRight: BaseAnimate{
+public class RotateOutDownRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
        // let p =  view.layer.anchorPoint
         view.setAnchorPoint (CGPointMake(1.0, 1.0))
@@ -42,7 +42,7 @@ class RotateOutDownRight: BaseAnimate{
     }
 }
 
-class RotateOutUpLeft: BaseAnimate{
+public class RotateOutUpLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
    //     let p =  view.layer.anchorPoint
         view.setAnchorPoint (CGPointMake(0.0, 1.0))
@@ -55,7 +55,7 @@ class RotateOutUpLeft: BaseAnimate{
 }
 
 
-class RotateOutUpRight: BaseAnimate{
+public class RotateOutUpRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
     //    let p =  view.layer.anchorPoint
         view.setAnchorPoint (CGPointMake(1.0, 1.0))

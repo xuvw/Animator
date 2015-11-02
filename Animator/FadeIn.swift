@@ -9,7 +9,7 @@
 import UIKit
 //MARK: FadeIn
 
-class FadeInAnimate: BaseAnimate{
+public class FadeInAnimate: BaseAnimate{
     var force: CGFloat = 1.0
     var forceBig: CGFloat = 10.0
     override func play(view: UIView, type: String, duration: Double) {
@@ -22,7 +22,7 @@ class FadeInAnimate: BaseAnimate{
 }
 
 
-class FadeInDownAnimate: FadeInAnimate{
+public class FadeInDownAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, -(view.frame.height * force), 0.0)
         super.play(view, type: type, duration: duration);
@@ -30,7 +30,7 @@ class FadeInDownAnimate: FadeInAnimate{
 }
 
 
-class FadeInDownBigAnimate: FadeInAnimate{
+public class FadeInDownBigAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, -(view.frame.height * forceBig), 0)
         super.play(view, type: type, duration: duration);
@@ -38,7 +38,7 @@ class FadeInDownBigAnimate: FadeInAnimate{
 }
 
 
-class FadeInLeftAnimate: FadeInAnimate{
+public class FadeInLeftAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width * force, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -46,7 +46,7 @@ class FadeInLeftAnimate: FadeInAnimate{
 }
 
 
-class FadeInLeftBigAnimate: FadeInAnimate{
+public class FadeInLeftBigAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width * forceBig, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -54,7 +54,7 @@ class FadeInLeftBigAnimate: FadeInAnimate{
 }
 
 
-class FadeInRightAnimate: FadeInAnimate{
+public class FadeInRightAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width * force, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -62,7 +62,7 @@ class FadeInRightAnimate: FadeInAnimate{
 }
 
 
-class FadeInRightBigAnimate: FadeInAnimate{
+public class FadeInRightBigAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width * forceBig, 0.0, 0)
         super.play(view, type: type, duration: duration);
@@ -71,7 +71,7 @@ class FadeInRightBigAnimate: FadeInAnimate{
 
 
 
-class FadeInUpAnimate: FadeInAnimate{
+public class FadeInUpAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, view.frame.height * force, 0)
         super.play(view, type: type, duration: duration);
@@ -79,7 +79,7 @@ class FadeInUpAnimate: FadeInAnimate{
 }
 
 
-class FadeInUpBigAnimate: FadeInAnimate{
+public class FadeInUpBigAnimate: FadeInAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, view.frame.height * forceBig, 0)
         super.play(view, type: type, duration: duration);

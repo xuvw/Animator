@@ -17,7 +17,7 @@ import UIKit
 
 
 
-class BaseAnimate {
+public class BaseAnimate {
     
     // 所有 Animate.css 效果的基类
     

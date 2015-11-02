@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZoomIn: BaseAnimate{
+public class ZoomIn: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         UIView.animateWithDuration(duration, animations: { () -> Void in
@@ -18,7 +18,7 @@ class ZoomIn: BaseAnimate{
     }
 }
 
-class ZoomInDown: BaseAnimate{
+public class ZoomInDown: BaseAnimate{
 
     override func play(view: UIView, type: String, duration: Double) {
         
@@ -53,7 +53,7 @@ class ZoomInDown: BaseAnimate{
 
 
 
-class ZoomInUp: BaseAnimate{
+public class ZoomInUp: BaseAnimate{
     
     override func play(view: UIView, type: String, duration: Double) {
         
@@ -88,7 +88,7 @@ class ZoomInUp: BaseAnimate{
 
 
 
-class ZoomInLeft: BaseAnimate{
+public class ZoomInLeft: BaseAnimate{
     
     override func play(view: UIView, type: String, duration: Double) {
         
@@ -122,7 +122,7 @@ class ZoomInLeft: BaseAnimate{
 }
 
 
-class ZoomInRight: BaseAnimate{
+public class ZoomInRight: BaseAnimate{
     
     override func play(view: UIView, type: String, duration: Double) {
         

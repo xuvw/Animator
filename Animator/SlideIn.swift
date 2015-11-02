@@ -10,7 +10,7 @@ import UIKit
 //MARK: Slide
 
 
-class SlideInDown: BaseAnimate{
+public class SlideInDown: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, -view.frame.height, 0);
@@ -22,7 +22,7 @@ class SlideInDown: BaseAnimate{
 
 
 
-class SlideInLeft: BaseAnimate{
+public class SlideInLeft: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width, 0, 0);
@@ -33,7 +33,7 @@ class SlideInLeft: BaseAnimate{
 }
 
 
-class SlideInRight: BaseAnimate{
+public class SlideInRight: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width, 0, 0);
@@ -44,7 +44,7 @@ class SlideInRight: BaseAnimate{
 }
 
 
-class SlideInUp: BaseAnimate{
+public class SlideInUp: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, view.frame.height, 0);
