@@ -7,7 +7,7 @@
 //
 
 
-import UIKitgv4333333333333333333w q q q q q q q q q q q q q q q t t t t t t t t g t f f t h r
+import UIKit
 
 //MARK: BaseEffect
 

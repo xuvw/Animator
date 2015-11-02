@@ -15,12 +15,13 @@ class BounceIn: BaseAnimate{
         view.layer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3)
         view.alpha = 0.0
 
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5.0, options: nil, animations: {
-                view.layer.transform = CATransform3DIdentity
-            view.alpha = 1.0
+        
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5.0, options: [], animations: { () -> Void in
+            
+            }) { (finish) -> Void in
+                
+        }
 
-            }, completion: { finished in
-        })
     }
 }
 
@@ -30,7 +31,7 @@ class BounceInDown: BaseAnimate{
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, -1000 , 0)
         view.alpha = 0.0
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DIdentity
             view.alpha = 1.0
             
@@ -47,7 +48,7 @@ class BounceInLeft: BaseAnimate{
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 1000, 0 , 0)
         view.alpha = 0.0
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 12.0, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 12.0, options: [], animations: {
             view.layer.transform = CATransform3DIdentity
             view.alpha = 1.0
             
@@ -62,7 +63,7 @@ class BounceInRight: BaseAnimate{
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), -1000, 0.00 , 0)
         view.alpha = 0.0
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DIdentity
             view.alpha = 1.0
             
@@ -78,7 +79,7 @@ class BounceInUp: BaseAnimate{
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, 1000 , 0)
         view.alpha = 0.0
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DIdentity
             view.alpha = 1.0
             
@@ -96,7 +97,7 @@ class BounceOut: BaseAnimate{
         
         view.alpha = 1.0
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5.0, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5.0, options: [], animations: {
             view.layer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3)
             view.alpha = 0
             
@@ -108,13 +109,12 @@ class BounceOut: BaseAnimate{
 class BounceOutDown: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         let d1 = duration * 0.4
-        let d2 = duration * 0.6
         
-        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DMakeTranslation(0, -20, 0)
             
             }, completion: { finished in
-                Animator.curveAnimate(view, timing: Animator.getTimingFunction("easeOut"), duration: d2, endTransform: CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, 1000 , 0), endOpacity: 0) { (finish) -> Void in
+                Animator.curveAnimate(view, timing: Animator.getTimingFunction("easeOut"), duration: duration, endTransform: CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, 1000 , 0), endOpacity: 0) { (finish) -> Void in
                     
                 }
         })
@@ -129,9 +129,8 @@ class BounceOutLeft: BaseAnimate{
         
         
         let d1 = duration * 0.4
-        let d2 = duration * 0.6
         
-        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DMakeTranslation(10, 0, 0)
             
             }, completion: { finished in
@@ -150,9 +149,8 @@ class BounceOutRight: BaseAnimate{
         
       
         let d1 = duration * 0.4
-        let d2 = duration * 0.6
         
-        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DMakeTranslation(-10, 0, 0)
             
             }, completion: { finished in
@@ -169,9 +167,8 @@ class BounceOutUp: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
-        let d2 = duration * 0.6
         
-        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: nil, animations: {
+        UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
             view.layer.transform = CATransform3DMakeTranslation(0, 20, 0)
             
             }, completion: { finished in

@@ -35,7 +35,7 @@ class Animator: NSObject {
         
         UIView.animateWithDuration(ani.duration,
             delay: 0.0,
-            options: (nil),
+            options: ([]),
             animations: {
                 view.layer.transform = et
                 view.layer.opacity = ani.endOpacity
@@ -89,7 +89,7 @@ class Animator: NSObject {
             
             UIView.animateWithDuration(duration,
                 delay: 0.0,
-                options: (nil),
+                options: ([]),
                 animations: {
                     view.layer.transform = endTransform
                     view.layer.opacity = endOpacity
@@ -124,7 +124,7 @@ class Animator: NSObject {
             
             UIView.animateWithDuration(duration,
                 delay: 0.0,
-                options: (nil),
+                options: ([]),
                 animations: {
                     view.layer.transform = endTransform
                     view.layer.opacity = endOpacity
@@ -159,7 +159,7 @@ class Animator: NSObject {
             
             UIView.animateWithDuration(duration,
                 delay: 0.0,
-                options: (nil),
+                options: ([]),
                 animations: {
                     view.layer.transform = endTransform
                 },
@@ -169,7 +169,7 @@ class Animator: NSObject {
             
             UIView.animateWithDuration(0.2,
                 delay: 0.0,
-                options: (nil),
+                options: ([]),
                 animations: {
                     view.layer.opacity = endOpacity
                 },

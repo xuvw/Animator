@@ -53,7 +53,7 @@ enum Timing{
     case EaseOutBack
     case EaseInOutBack
     
-    
+    // This time function can not be implemented easly with system API
     //            - name: easeInElastic
     //            - name: easeOutElastic
     //            - name: easeInOutElastic
@@ -64,6 +64,9 @@ enum Timing{
     
     
 }
+
+
+// From https://github.com/MengTo/Spring
 
 extension CAMediaTimingFunction{
     

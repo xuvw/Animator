@@ -23,9 +23,7 @@
 		C522D7321B71048A00B78A9C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7311B71048A00B78A9C /* Animator.swift */; };
 		C5B3CB1D1B790FE100A74D22 /* Ani.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1C1B790FE100A74D22 /* Ani.swift */; };
 		C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */; };
-		C5BFB9351B7A22F800B318DB /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */; };
-		C5BFB9391B7A3B0300B318DB /* NavTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BFB9381B7A3B0300B318DB /* NavTrans.swift */; };
-		C5C815BA1B9C332900903C12 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815B91B9C332900903C12 /* Timing.swift */; };
+		C5C815BA1B9C332900903C12 /* CAMediaTimingFunction+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */; };
 		C5C815BC1B9C35E400903C12 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815BB1B9C35E400903C12 /* Effect.swift */; };
 		C5C815BE1B9C372900903C12 /* Keynote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815BD1B9C372900903C12 /* Keynote.swift */; };
 		C5D3BBD11B771FC100374D49 /* FadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBCD1B771FC100374D49 /* FadeIn.swift */; };
@@ -37,7 +35,6 @@
 		C5D3BBDD1B7736C500374D49 /* RotateIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBDC1B7736C500374D49 /* RotateIn.swift */; };
 		C5D3BBDF1B773A1E00374D49 /* RotateOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3BBDE1B773A1E00374D49 /* RotateOut.swift */; };
 		C5D65D711B7433EB00B09DA7 /* UIView+setAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */; };
-		C5D65D731B743DAF00B09DA7 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D65D721B743DAF00B09DA7 /* BubbleTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +68,7 @@
 		C522D7311B71048A00B78A9C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		C5B3CB1C1B790FE100A74D22 /* Ani.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ani.swift; sourceTree = "<group>"; };
 		C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimate.swift; sourceTree = "<group>"; };
-		C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
-		C5BFB9381B7A3B0300B318DB /* NavTrans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTrans.swift; sourceTree = "<group>"; };
-		C5C815B91B9C332900903C12 /* Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timing.swift; sourceTree = "<group>"; };
+		C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Timing.swift"; sourceTree = "<group>"; };
 		C5C815BB1B9C35E400903C12 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		C5C815BD1B9C372900903C12 /* Keynote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keynote.swift; sourceTree = "<group>"; };
 		C5D3BBCD1B771FC100374D49 /* FadeIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeIn.swift; sourceTree = "<group>"; };
@@ -85,7 +80,6 @@
 		C5D3BBDC1B7736C500374D49 /* RotateIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateIn.swift; sourceTree = "<group>"; };
 		C5D3BBDE1B773A1E00374D49 /* RotateOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOut.swift; sourceTree = "<group>"; };
 		C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+setAnchorPoint.swift"; sourceTree = "<group>"; };
-		C5D65D721B743DAF00B09DA7 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +127,6 @@
 				C522D7111B71046200B78A9C /* AppDelegate.swift */,
 				C522D7131B71046200B78A9C /* ViewController.swift */,
 				C522D7151B71046200B78A9C /* Main.storyboard */,
-				C5BFB9381B7A3B0300B318DB /* NavTrans.swift */,
-				C5BFB9341B7A22F800B318DB /* AnotherViewController.swift */,
 				C522D7181B71046200B78A9C /* Images.xcassets */,
 				C522D71A1B71046200B78A9C /* LaunchScreen.xib */,
 				C522D70F1B71046200B78A9C /* Supporting Files */,
@@ -172,7 +164,6 @@
 			children = (
 				C51D72331B77876D0028BD27 /* Spring.swift */,
 				C51D72341B77876D0028BD27 /* SpringView.swift */,
-				C5D65D721B743DAF00B09DA7 /* BubbleTransition.swift */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -181,11 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				C522D7311B71048A00B78A9C /* Animator.swift */,
-				C5C815B91B9C332900903C12 /* Timing.swift */,
+				C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */,
+				C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */,
 				C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */,
 				C5C815BB1B9C35E400903C12 /* Effect.swift */,
 				C5B3CB1C1B790FE100A74D22 /* Ani.swift */,
-				C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -315,10 +306,9 @@
 				C5D3BBDD1B7736C500374D49 /* RotateIn.swift in Sources */,
 				C5D3BBD21B771FC100374D49 /* FadeOut.swift in Sources */,
 				C51D72381B7787D20028BD27 /* Attention.swift in Sources */,
-				C5C815BA1B9C332900903C12 /* Timing.swift in Sources */,
+				C5C815BA1B9C332900903C12 /* CAMediaTimingFunction+Timing.swift in Sources */,
 				C51D723A1B778A6E0028BD27 /* Speed.swift in Sources */,
 				C5D3BBD11B771FC100374D49 /* FadeIn.swift in Sources */,
-				C5D65D731B743DAF00B09DA7 /* BubbleTransition.swift in Sources */,
 				C522D7321B71048A00B78A9C /* Animator.swift in Sources */,
 				C5D3BBD31B771FC100374D49 /* SlideIn.swift in Sources */,
 				C522D7141B71046200B78A9C /* ViewController.swift in Sources */,
@@ -326,9 +316,7 @@
 				C5C815BC1B9C35E400903C12 /* Effect.swift in Sources */,
 				C51D72301B7779C10028BD27 /* Flip.swift in Sources */,
 				C5D3BBD41B771FC100374D49 /* SlideOut.swift in Sources */,
-				C5BFB9391B7A3B0300B318DB /* NavTrans.swift in Sources */,
 				C5D65D711B7433EB00B09DA7 /* UIView+setAnchorPoint.swift in Sources */,
-				C5BFB9351B7A22F800B318DB /* AnotherViewController.swift in Sources */,
 				C522D7121B71046200B78A9C /* AppDelegate.swift in Sources */,
 				C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */,
 				C51D72361B77876D0028BD27 /* SpringView.swift in Sources */,
