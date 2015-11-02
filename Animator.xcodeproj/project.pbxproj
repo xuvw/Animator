@@ -21,6 +21,7 @@
 		C522D71C1B71046200B78A9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C522D71A1B71046200B78A9C /* LaunchScreen.xib */; };
 		C522D7281B71046200B78A9C /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7271B71046200B78A9C /* AnimatorTests.swift */; };
 		C522D7321B71048A00B78A9C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C522D7311B71048A00B78A9C /* Animator.swift */; };
+		C528B8E61BE7372500A68C10 /* CellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528B8E51BE7372500A68C10 /* CellAnimator.swift */; settings = {ASSET_TAGS = (); }; };
 		C5B3CB1D1B790FE100A74D22 /* Ani.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1C1B790FE100A74D22 /* Ani.swift */; };
 		C5B3CB1F1B79105D00A74D22 /* BaseAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */; };
 		C5C815BA1B9C332900903C12 /* CAMediaTimingFunction+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */; };
@@ -66,6 +67,7 @@
 		C522D7261B71046200B78A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C522D7271B71046200B78A9C /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
 		C522D7311B71048A00B78A9C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		C528B8E51BE7372500A68C10 /* CellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAnimator.swift; sourceTree = "<group>"; };
 		C5B3CB1C1B790FE100A74D22 /* Ani.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ani.swift; sourceTree = "<group>"; };
 		C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimate.swift; sourceTree = "<group>"; };
 		C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Timing.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		C5412A9E1B771DD300C9F876 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C528B8E51BE7372500A68C10 /* CellAnimator.swift */,
 				C522D7311B71048A00B78A9C /* Animator.swift */,
 				C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */,
 				C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */,
@@ -305,6 +308,7 @@
 			files = (
 				C5D3BBDD1B7736C500374D49 /* RotateIn.swift in Sources */,
 				C5D3BBD21B771FC100374D49 /* FadeOut.swift in Sources */,
+				C528B8E61BE7372500A68C10 /* CellAnimator.swift in Sources */,
 				C51D72381B7787D20028BD27 /* Attention.swift in Sources */,
 				C5C815BA1B9C332900903C12 /* CAMediaTimingFunction+Timing.swift in Sources */,
 				C51D723A1B778A6E0028BD27 /* Speed.swift in Sources */,
