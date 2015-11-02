@@ -2,11 +2,10 @@
 //  AnimatorTests.swift
 //  AnimatorTests
 //
-//  Created by xiangyu on 15/8/4.
-//  Copyright (c) 2015年 MMClub. All rights reserved.
+//  Created by xiangyu on 15/11/2.
+//  Copyright © 2015年 MMClub. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class AnimatorTests: XCTestCase {
@@ -23,12 +22,12 @@ class AnimatorTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
