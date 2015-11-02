@@ -21,7 +21,6 @@ class RotateIn: BaseAnimate{
 class RotateInDownLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
-        let p =  view.layer.anchorPoint
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finish) -> Void in
@@ -34,7 +33,6 @@ class RotateInDownLeft: BaseAnimate{
 class RotateInDownRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
-        let p =  view.layer.anchorPoint
         view.setAnchorPoint( CGPointMake(1.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finish) -> Void in
@@ -67,7 +65,6 @@ class RotateInDownRight: BaseAnimate{
 class RotateInUpLeft: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
-        let p =  view.layer.anchorPoint
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finish) -> Void in
@@ -82,7 +79,6 @@ class RotateInUpLeft: BaseAnimate{
 class RotateInUpRight: BaseAnimate{
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
-        let p =  view.layer.anchorPoint
         view.setAnchorPoint( CGPointMake(1.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_2 * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finish) -> Void in

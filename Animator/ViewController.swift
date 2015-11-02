@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let f = FadeInDownEffect()
-        f.play(myView)
+        let f = ZoomIn()
+        f.play(myView, duration:0.8)
 
     }
 

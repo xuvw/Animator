@@ -11,7 +11,7 @@ import UIKit
 class Speed: BaseAnimate {
     
     override func play(view: UIView, type: String, duration: Double) {
-        let force = 0.5
+        //let force = 0.5
         let curve = "easeOut"
         let delay = 0.0
         let repeatCount = Float(1.0)
@@ -38,7 +38,7 @@ class Speed: BaseAnimate {
             var t3 = CATransform3DMakeAffineTransform(t);
             t3.m34 = -(1.0 / 500.0);
             
-            var t4 = CATransform3DIdentity
+            let t4 = CATransform3DIdentity
             
             
             let morphY = CAKeyframeAnimation()

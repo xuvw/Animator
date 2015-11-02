@@ -32,7 +32,7 @@ class ZoomOutDown: BaseAnimate{
         endOpacity: 1.0,
         finish: {_ in
             
-            let p = view.layer.anchorPoint
+          //  let p = view.layer.anchorPoint
             
             view.layer.anchorPoint = CGPointMake(0.5, 1.0)
             Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),
@@ -66,7 +66,7 @@ class ZoomOutUp: BaseAnimate{
             endOpacity: 1.0,
             finish: {_ in
                 
-                let p = view.layer.anchorPoint
+           //     let p = view.layer.anchorPoint
                 
                 view.layer.anchorPoint = CGPointMake(0.5, 1.0)
                 Animator.curveAnimate(view, timing: CAMediaTimingFunction(controlPoints: 0.175, 0.885, 0.320, 1),

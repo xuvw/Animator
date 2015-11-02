@@ -47,10 +47,10 @@ class Hinge: BaseAnimate {
         
    
             
-            var t1 = CATransform3DIdentity
-            var t2 = CATransform3DMakeRotation(CGFloat(M_PI_2 / 9.0 * 8.0), 0.0, 0.0, 1.0)
-            var t3 = CATransform3DMakeRotation(CGFloat(M_PI_2 / 9.0 * 6.0), 0.0, 0.0, 1.0)
-            var t4 = CATransform3DMakeTranslation(0, 400, 0)
+            let t1 = CATransform3DIdentity
+            let t2 = CATransform3DMakeRotation(CGFloat(M_PI_2 / 9.0 * 8.0), 0.0, 0.0, 1.0)
+            let t3 = CATransform3DMakeRotation(CGFloat(M_PI_2 / 9.0 * 6.0), 0.0, 0.0, 1.0)
+            let t4 = CATransform3DMakeTranslation(0, 400, 0)
             
             let morphY = CAKeyframeAnimation()
             morphY.keyPath = "transform"
