@@ -29,3 +29,4 @@ DerivedData
 .Spotlight-V100
 .Trashes
  
+ /test_output/*
