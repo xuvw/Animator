@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C522D7201B71046200B78A9C"
+               BlueprintIdentifier = "C528B8F81BE7445600A68C10"
                BuildableName = "AnimatorTests.xctest"
                BlueprintName = "AnimatorTests"
                ReferencedContainer = "container:Animator.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C522D7201B71046200B78A9C"
+               BlueprintIdentifier = "C528B8F81BE7445600A68C10"
                BuildableName = "AnimatorTests.xctest"
                BlueprintName = "AnimatorTests"
                ReferencedContainer = "container:Animator.xcodeproj">
