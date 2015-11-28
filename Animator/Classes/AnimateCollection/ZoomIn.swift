@@ -9,6 +9,8 @@
 import UIKit
 
 public class ZoomIn: BaseAnimate{
+    public override init() {
+    }
     override func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         UIView.animateWithDuration(duration, animations: { () -> Void in

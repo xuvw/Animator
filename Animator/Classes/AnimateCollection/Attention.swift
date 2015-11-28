@@ -11,7 +11,7 @@ import UIKit
 public class Attention: BaseAnimate {
     
    
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         let force = 0.5
         let curve = ""
         let delay = 0.0

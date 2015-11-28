@@ -9,6 +9,7 @@
 import UIKit
 
 public class ZoomOut: BaseAnimate{
+   
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
         UIView.animateWithDuration(duration, animations: { () -> Void in
@@ -19,6 +20,7 @@ public class ZoomOut: BaseAnimate{
 }
 
 public class ZoomOutDown: BaseAnimate{
+   
     var transfrom:CATransform3D = CATransform3DIdentity
     override func play(view: UIView, type: String, duration: Double) {
 

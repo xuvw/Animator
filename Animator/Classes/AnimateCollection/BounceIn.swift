@@ -10,7 +10,7 @@ import UIKit
 
 
 public class BounceIn: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         view.layer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3)
         view.alpha = 0.0
@@ -26,7 +26,7 @@ public class BounceIn: BaseAnimate{
 }
 
 public class BounceInDown: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, -1000 , 0)
         view.alpha = 0.0
@@ -43,7 +43,7 @@ public class BounceInDown: BaseAnimate{
 
 
 public class BounceInLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override  public  func play(view: UIView, type: String, duration: Double) {
         
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 1000, 0 , 0)
         view.alpha = 0.0
@@ -58,7 +58,7 @@ public class BounceInLeft: BaseAnimate{
 }
 
 public class BounceInRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public  func play(view: UIView, type: String, duration: Double) {
         
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), -1000, 0.00 , 0)
         view.alpha = 0.0
@@ -74,7 +74,7 @@ public class BounceInRight: BaseAnimate{
 
 
 public class BounceInUp: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public  func play(view: UIView, type: String, duration: Double) {
         
         view.layer.transform = CATransform3DTranslate(CATransform3DMakeScale(1.0, 1.0, 1.0), 0, 1000 , 0)
         view.alpha = 0.0
@@ -93,7 +93,7 @@ public class BounceInUp: BaseAnimate{
 
 
 public class BounceOut: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override  public func play(view: UIView, type: String, duration: Double) {
         
         view.alpha = 1.0
         
@@ -107,7 +107,7 @@ public class BounceOut: BaseAnimate{
 }
 
 public class BounceOutDown: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override  public func play(view: UIView, type: String, duration: Double) {
         let d1 = duration * 0.4
         
         UIView.animateWithDuration(d1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 6.0, options: [], animations: {
@@ -125,7 +125,7 @@ public class BounceOutDown: BaseAnimate{
 
 
 public class BounceOutLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         
         let d1 = duration * 0.4
@@ -145,7 +145,7 @@ public class BounceOutLeft: BaseAnimate{
 }
 
 public class BounceOutRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
       
         let d1 = duration * 0.4
@@ -164,7 +164,7 @@ public class BounceOutRight: BaseAnimate{
 
 
 public class BounceOutUp: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public  func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
         

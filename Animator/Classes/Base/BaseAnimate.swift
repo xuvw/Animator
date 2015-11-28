@@ -23,33 +23,33 @@ public class BaseAnimate {
     public init() {
     }
     
-    public func play(view: UIView, type: String, duration: Double){
+     func play(view: UIView, type: String, duration: Double){
     }
     
-    public func play(views: Array<UIView>, type: String, duration: Double){
+     func play(views: Array<UIView>, type: String, duration: Double){
         for view in views{
             play(view, type: type, duration: duration)
         }
     }
     
-    public func play(view: UIView){
+     func play(view: UIView){
         self.play(view, type: "", duration: 0.3)
     }
     
-    public func play(view: UIView,  duration: Double){
+     func play(view: UIView,  duration: Double){
         self.play(view, type: "", duration: duration)
     }
     
-    public func play(views: Array<UIView>){
+     func play(views: Array<UIView>){
         self.play(views, type: "", duration: 0.3)
     }
     
-    public func play(views: Array<UIView>,  duration: Double){
+     func play(views: Array<UIView>,  duration: Double){
         self.play(views, type: "", duration: duration)
     }
     
     
-    public func getTimingFunction(curve: String) -> CAMediaTimingFunction {
+     func getTimingFunction(curve: String) -> CAMediaTimingFunction {
         return Animator.getTimingFunction(curve)
     }
 }

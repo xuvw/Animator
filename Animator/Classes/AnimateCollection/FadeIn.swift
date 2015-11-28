@@ -12,7 +12,7 @@ import UIKit
 public class FadeInAnimate: BaseAnimate{
     var force: CGFloat = 1.0
     var forceBig: CGFloat = 10.0
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.opacity = 0.0;
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.opacity = 1;
@@ -23,7 +23,7 @@ public class FadeInAnimate: BaseAnimate{
 
 
 public class FadeInDownAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, -(view.frame.height * force), 0.0)
         super.play(view, type: type, duration: duration);
     }
@@ -31,7 +31,7 @@ public class FadeInDownAnimate: FadeInAnimate{
 
 
 public class FadeInDownBigAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, -(view.frame.height * forceBig), 0)
         super.play(view, type: type, duration: duration);
     }
@@ -39,7 +39,7 @@ public class FadeInDownBigAnimate: FadeInAnimate{
 
 
 public class FadeInLeftAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width * force, 0.0, 0)
         super.play(view, type: type, duration: duration);
     }
@@ -80,7 +80,7 @@ public class FadeInUpAnimate: FadeInAnimate{
 
 
 public class FadeInUpBigAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, view.frame.height * forceBig, 0)
         super.play(view, type: type, duration: duration);
     }
