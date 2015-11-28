@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-      a swift port of animate.css
+      Yet another iOS animation library in Swift2
+      (a swift port of animate.css)
                    DESC
 
   s.homepage     = "https://github.com/oa414/Animator"
@@ -81,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/oa414/Animator.git" }
+  s.source       = { :git => "https://github.com/oa414/Animator.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
