@@ -35,10 +35,12 @@ pod 'Animator', :git => 'https://github.com/oa414/Animator.git', :tag => '0.0.5'
 
 ## 开发计划
 
-- []完善代码和文档
-- []完善 scorll.js（http://lab.hakim.se/scroll-effects/） 的 Swift 实现
-- []改善代码质量和规范工程
-- []加入更友好的语法糖 API 和集成更多简单效果
+加油完善中  (｡・`ω´･) 
+
+-[ ] 完善代码和文档
+-[ ] 完善 scorll.js（http://lab.hakim.se/scroll-effects/） 的 Swift 实现
+-[ ] 改善代码质量和规范工程
+-[ ] 加入更友好的语法糖 API 和集成更多简单效果
 
 
 
