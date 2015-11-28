@@ -19,31 +19,31 @@ public class Animator: NSObject {
     
     // 用一个 Ani 对象来播放动画
     
-    class func animate(view: UIView, ani: Ani){
-        let st = ani.startTransform ?? CATransform3DIdentity
-        let et = ani.endTransform ?? CATransform3DIdentity
-    
-        
-        view.layer.transform = st
-        view.layer.opacity = ani.startOpacity
-        let t = ani.timing;
-        
-        CATransaction.begin()
-        CATransaction.setAnimationDuration(ani.duration)
-        CATransaction.setAnimationTimingFunction(t)
-        CATransaction.commit()
-        
-        UIView.animateWithDuration(ani.duration,
-            delay: 0.0,
-            options: ([]),
-            animations: {
-                view.layer.transform = et
-                view.layer.opacity = ani.endOpacity
-            },
-            completion: { finished in
-                
-        })
-    }
+//    class func animate(view: UIView, ani: Ani){
+//        let st = ani.startTransform ?? CATransform3DIdentity
+//        let et = ani.endTransform ?? CATransform3DIdentity
+//    
+//        
+//        view.layer.transform = st
+//        view.layer.opacity = ani.startOpacity
+//        let t = ani.timing;
+//        
+//        CATransaction.begin()
+//        CATransaction.setAnimationDuration(ani.duration)
+//        CATransaction.setAnimationTimingFunction(t)
+//        CATransaction.commit()
+//        
+//        UIView.animateWithDuration(ani.duration,
+//            delay: 0.0,
+//            options: ([]),
+//            animations: {
+//                view.layer.transform = et
+//                view.layer.opacity = ani.endOpacity
+//            },
+//            completion: { finished in
+//                
+//        })
+//    }
     
   
     

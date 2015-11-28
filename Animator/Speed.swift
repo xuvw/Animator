@@ -11,13 +11,13 @@ import UIKit
 public class Speed: BaseAnimate {
     
     override func play(view: UIView, type: String, duration: Double) {
-        //let force = 0.5
         let curve = "easeOut"
         let delay = 0.0
         let repeatCount = Float(1.0)
         let layer = view.layer
         
         switch(type){
+            
         case "light":
             
             

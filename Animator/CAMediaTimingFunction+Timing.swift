@@ -61,8 +61,6 @@ enum Timing{
     //            - name: easeOutBounce
     //            - name: easeInOutBounce
     
-    
-    
 }
 
 

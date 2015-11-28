@@ -9,6 +9,7 @@
 import UIKit
 
 
+//TODO
 
 public class CellAnimator {
     static var dict : Dictionary<String, Selector> = ["scala":Selector("scalaAnimate:")]

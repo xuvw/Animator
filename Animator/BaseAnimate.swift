@@ -19,18 +19,6 @@ import UIKit
 
 public class BaseAnimate {
     
-    // 所有 Animate.css 效果的基类
-    
-    // 自定义曲线，放大和alpha不同步的动画
-//    class func curveAsyncAnimate(view: UIView,
-//        timing: CAMediaTimingFunction,
-//        startTransform: CATransform3D,
-//        startOpacity: Float = 1.0,
-//        duration: NSTimeInterval = 0.4,
-//        endTransform: CATransform3D = CATransform3DIdentity,
-//        endOpacity: Float = 1.0){
-    
-    
     
     func play(view: UIView, type: String, duration: Double){
     }
