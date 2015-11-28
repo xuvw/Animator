@@ -6,26 +6,27 @@ Yet another iOS animation library in Swift2
 
 working in progress
 
-iOS AnimateTableView
+## Animator
 
-function :
+https://daneden.github.io/animate.css/ 的 Swift 实现
 
-IBInspectable
-子类还是 extention?子类
-设置成 AnimateTableView，然后加上那个属性，就可以自动增加动画
-动画函数是私有的，而tableview delegate调用它，用户可以重写并调用对应方法
-完善的中英文文档
-动画处理器
-性能和兼容性测试
-8种+效果
-CocoaPods，Cartage，CI 的 Tag
-code4app,cocoacontrol,各大媒体上传，微博repost
+FadeIn, FadeOut, ZoomIn, ZoomOut, SlideIn, SlideOut, ZoomIn, ZoomOut, RotateIn, RotateOut, Flip,BounceIn, BounceOut,Attention, Speed, Special 效果。
+
+效果名称和 https://daneden.github.io/animate.css/ 一一对应。
+
+## 使用
+
+   ZoomIn().play(myView, duration:0.8)
+   BounceOutRight().play(myView, duration: 0.3)
+
+## 开发计划
+
+- []完善代码和文档
+- []完善 scorll.js（http://lab.hakim.se/scroll-effects/） 的 Swift 实现
+- []改善代码质量和规范工程
+- []加入更友好的语法糖 API 和集成更多简单效果
 
 
-
-AnimateTableView
-TableView+Animate
-Animates
 
 
 

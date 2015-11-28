@@ -113,8 +113,7 @@
 		C522D70E1B71046200B78A9C /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				C5D3BBD51B77203300374D49 /* AnimateCollection */,
-				C5412A9E1B771DD300C9F876 /* Base */,
+				C5F8B8361C0A440400FA9B02 /* Classes */,
 				C522D7111B71046200B78A9C /* AppDelegate.swift */,
 				C522D7131B71046200B78A9C /* ViewController.swift */,
 				C522D7151B71046200B78A9C /* Main.storyboard */,
@@ -172,6 +171,15 @@
 				C51D723B1B7840D50028BD27 /* Special.swift */,
 			);
 			name = AnimateCollection;
+			sourceTree = "<group>";
+		};
+		C5F8B8361C0A440400FA9B02 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C5D3BBD51B77203300374D49 /* AnimateCollection */,
+				C5412A9E1B771DD300C9F876 /* Base */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
