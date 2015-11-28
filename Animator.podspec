@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Animator"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Yet another iOS animation library in Swift2"
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/oa414/Animator.git"}
+  s.source       = { :git => "https://github.com/oa414/Animator.git", :tag => s.version}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
