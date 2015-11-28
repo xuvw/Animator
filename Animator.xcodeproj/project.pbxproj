@@ -114,12 +114,12 @@
 			isa = PBXGroup;
 			children = (
 				C5F8B8361C0A440400FA9B02 /* Classes */,
+				C522D70F1B71046200B78A9C /* Supporting Files */,
 				C522D7111B71046200B78A9C /* AppDelegate.swift */,
-				C522D7131B71046200B78A9C /* ViewController.swift */,
-				C522D7151B71046200B78A9C /* Main.storyboard */,
 				C522D7181B71046200B78A9C /* Images.xcassets */,
 				C522D71A1B71046200B78A9C /* LaunchScreen.xib */,
-				C522D70F1B71046200B78A9C /* Supporting Files */,
+				C522D7151B71046200B78A9C /* Main.storyboard */,
+				C522D7131B71046200B78A9C /* ViewController.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			children = (
 				C522D7101B71046200B78A9C /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C528B8FA1BE7445600A68C10 /* AnimatorTests */ = {
@@ -144,33 +144,33 @@
 		C5412A9E1B771DD300C9F876 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C528B8E51BE7372500A68C10 /* CellAnimator.swift */,
 				C522D7311B71048A00B78A9C /* Animator.swift */,
-				C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */,
-				C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */,
 				C5B3CB1E1B79105D00A74D22 /* BaseAnimate.swift */,
+				C5C815B91B9C332900903C12 /* CAMediaTimingFunction+Timing.swift */,
+				C528B8E51BE7372500A68C10 /* CellAnimator.swift */,
+				C5D65D701B7433EB00B09DA7 /* UIView+setAnchorPoint.swift */,
 			);
-			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		C5D3BBD51B77203300374D49 /* AnimateCollection */ = {
 			isa = PBXGroup;
 			children = (
+				C51D72371B7787D20028BD27 /* Attention.swift */,
+				C51D72311B777EBA0028BD27 /* BounceIn.swift */,
 				C5D3BBCD1B771FC100374D49 /* FadeIn.swift */,
-				C5D3BBD61B77226300374D49 /* ZoomOut.swift */,
 				C5D3BBCE1B771FC100374D49 /* FadeOut.swift */,
+				C51D722F1B7779C10028BD27 /* Flip.swift */,
+				C5D3BBDC1B7736C500374D49 /* RotateIn.swift */,
+				C5D3BBDE1B773A1E00374D49 /* RotateOut.swift */,
 				C5D3BBCF1B771FC100374D49 /* SlideIn.swift */,
 				C5D3BBD01B771FC100374D49 /* SlideOut.swift */,
-				C5D3BBD81B77321300374D49 /* ZoomIn.swift */,
-				C5D3BBDC1B7736C500374D49 /* RotateIn.swift */,
-				C51D722F1B7779C10028BD27 /* Flip.swift */,
-				C5D3BBDE1B773A1E00374D49 /* RotateOut.swift */,
-				C51D72311B777EBA0028BD27 /* BounceIn.swift */,
-				C51D72371B7787D20028BD27 /* Attention.swift */,
-				C51D72391B778A6E0028BD27 /* Speed.swift */,
 				C51D723B1B7840D50028BD27 /* Special.swift */,
+				C51D72391B778A6E0028BD27 /* Speed.swift */,
+				C5D3BBD81B77321300374D49 /* ZoomIn.swift */,
+				C5D3BBD61B77226300374D49 /* ZoomOut.swift */,
 			);
-			name = AnimateCollection;
+			path = AnimateCollection;
 			sourceTree = "<group>";
 		};
 		C5F8B8361C0A440400FA9B02 /* Classes */ = {
@@ -179,7 +179,7 @@
 				C5D3BBD51B77203300374D49 /* AnimateCollection */,
 				C5412A9E1B771DD300C9F876 /* Base */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +331,7 @@
 				C522D7161B71046200B78A9C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C522D71A1B71046200B78A9C /* LaunchScreen.xib */ = {
@@ -339,6 +340,7 @@
 				C522D71B1B71046200B78A9C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Animator/Info.plist;
+				INFOPLIST_FILE = "Animator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.linxiangyu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Animator/Info.plist;
+				INFOPLIST_FILE = "Animator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.linxiangyu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
