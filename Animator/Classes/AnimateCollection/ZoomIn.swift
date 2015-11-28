@@ -11,7 +11,7 @@ import UIKit
 public class ZoomIn: BaseAnimate{
     public override init() {
     }
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.transform = CGAffineTransformMakeScale(0.3, 0.3)
@@ -22,7 +22,7 @@ public class ZoomIn: BaseAnimate{
 
 public class ZoomInDown: BaseAnimate{
 
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.6
         let d2 = duration * 0.4
@@ -57,7 +57,7 @@ public class ZoomInDown: BaseAnimate{
 
 public class ZoomInUp: BaseAnimate{
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.6
         let d2 = duration * 0.4
@@ -92,7 +92,7 @@ public class ZoomInUp: BaseAnimate{
 
 public class ZoomInLeft: BaseAnimate{
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.6
         let d2 = duration * 0.4
@@ -126,7 +126,7 @@ public class ZoomInLeft: BaseAnimate{
 
 public class ZoomInRight: BaseAnimate{
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.6
         let d2 = duration * 0.4

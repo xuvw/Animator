@@ -10,7 +10,7 @@ import UIKit
 
 public class Speed: BaseAnimate {
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         let curve = "easeOut"
         let delay = 0.0
         let repeatCount = Float(1.0)

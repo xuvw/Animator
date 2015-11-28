@@ -12,7 +12,7 @@ import UIKit
 
 public class SlideInDown: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override  public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, -view.frame.height, 0);
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.transform = self.transfrom
@@ -24,7 +24,7 @@ public class SlideInDown: BaseAnimate{
 
 public class SlideInLeft: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width, 0, 0);
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.transform = self.transfrom
@@ -35,7 +35,7 @@ public class SlideInLeft: BaseAnimate{
 
 public class SlideInRight: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width, 0, 0);
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.transform = self.transfrom
@@ -46,7 +46,7 @@ public class SlideInRight: BaseAnimate{
 
 public class SlideInUp: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0, view.frame.height, 0);
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.transform = self.transfrom

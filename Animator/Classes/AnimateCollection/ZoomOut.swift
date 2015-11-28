@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class ZoomOut: BaseAnimate{
+public  class ZoomOut: BaseAnimate{
    
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.transform = CGAffineTransformMakeScale(0.3, 0.3)
             view.alpha = 0
@@ -19,10 +19,10 @@ public class ZoomOut: BaseAnimate{
     }
 }
 
-public class ZoomOutDown: BaseAnimate{
+public  class ZoomOutDown: BaseAnimate{
    
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
 
         let d1 = duration * 0.4
         let d2 = duration * 0.6
@@ -54,9 +54,9 @@ public class ZoomOutDown: BaseAnimate{
 
 
 
-class ZoomOutUp: BaseAnimate{
+public class ZoomOutUp: BaseAnimate{
     var transfrom:CATransform3D = CATransform3DIdentity
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
         let d2 = duration * 0.6
@@ -89,7 +89,7 @@ class ZoomOutUp: BaseAnimate{
 
 
 public class ZoomOutLeft: BaseAnimate {
-    override func play(view: UIView, type: String, duration: Double) {
+    override public  func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
         let d2 = duration * 0.6
@@ -125,7 +125,7 @@ public class ZoomOutLeft: BaseAnimate {
 
 
 public class ZoomOutRight: BaseAnimate {
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         
         let d1 = duration * 0.4
         let d2 = duration * 0.6

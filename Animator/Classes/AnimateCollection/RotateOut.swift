@@ -9,7 +9,7 @@
 import UIKit
 
 public class RotateOut: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         let transform = CATransform3DMakeRotation( CGFloat(M_PI * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in
             
@@ -18,7 +18,7 @@ public class RotateOut: BaseAnimate{
     }
 }
 public class RotateOutDownLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.setAnchorPoint (CGPointMake(0.0, 1.0))
         let transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in
@@ -28,7 +28,7 @@ public class RotateOutDownLeft: BaseAnimate{
     }
 }
 public class RotateOutDownRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.setAnchorPoint (CGPointMake(1.0, 1.0))
         let transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in
@@ -39,7 +39,7 @@ public class RotateOutDownRight: BaseAnimate{
 }
 
 public class RotateOutUpLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.setAnchorPoint (CGPointMake(0.0, 1.0))
         let transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in
@@ -50,7 +50,7 @@ public class RotateOutUpLeft: BaseAnimate{
 
 
 public class RotateOutUpRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.setAnchorPoint (CGPointMake(1.0, 1.0))
         let transform = CATransform3DMakeRotation( CGFloat(M_PI_2 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: transform, endOpacity: 0.0) { (finish) -> Void in

@@ -10,7 +10,7 @@ import UIKit
 
 public class RollOut: BaseAnimate {
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         let t = CATransform3DMakeTranslation(view.frame.width, 0, 0)
         let t2 = CATransform3DRotate(t, CGFloat(M_PI_2 / 3.0 * 2.0), 0, 0, 1)
         
@@ -24,7 +24,7 @@ public class RollOut: BaseAnimate {
 
 public class RollIn: BaseAnimate {
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         let t = CATransform3DMakeTranslation(-view.frame.width, 0, 0)
         let t2 = CATransform3DRotate(t, CGFloat(M_PI_2 / 3.0 * -2.0), 0, 0, 1)
         
@@ -42,7 +42,7 @@ public class RollIn: BaseAnimate {
 
 public class Hinge: BaseAnimate {
     
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.setAnchorPoint(CGPointMake(0.0, 0.0))
         
    

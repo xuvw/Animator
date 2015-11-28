@@ -12,7 +12,7 @@ import UIKit
 public class FadeInAnimate: BaseAnimate{
     var force: CGFloat = 1.0
     var forceBig: CGFloat = 10.0
-    override public func play(view: UIView, type: String, duration: Double) {
+    override  public func play(view: UIView, type: String, duration: Double) {
         view.layer.opacity = 0.0;
         UIView.animateWithDuration(duration, animations: { () -> Void in
             view.layer.opacity = 1;
@@ -47,7 +47,7 @@ public class FadeInLeftAnimate: FadeInAnimate{
 
 
 public class FadeInLeftBigAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(view.frame.width * forceBig, 0.0, 0)
         super.play(view, type: type, duration: duration);
     }
@@ -55,7 +55,7 @@ public class FadeInLeftBigAnimate: FadeInAnimate{
 
 
 public class FadeInRightAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width * force, 0.0, 0)
         super.play(view, type: type, duration: duration);
     }
@@ -63,7 +63,7 @@ public class FadeInRightAnimate: FadeInAnimate{
 
 
 public class FadeInRightBigAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(-view.frame.width * forceBig, 0.0, 0)
         super.play(view, type: type, duration: duration);
     }
@@ -72,7 +72,7 @@ public class FadeInRightBigAnimate: FadeInAnimate{
 
 
 public class FadeInUpAnimate: FadeInAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.layer.transform = CATransform3DMakeTranslation(0.0, view.frame.height * force, 0)
         super.play(view, type: type, duration: duration);
     }

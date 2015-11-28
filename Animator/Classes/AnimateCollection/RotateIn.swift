@@ -9,7 +9,7 @@
 import UIKit
 
 public class RotateIn: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
         Animator.curveAnimate(view, timing: getTimingFunction(""), duration: duration, endTransform: CATransform3DIdentity, endOpacity: 1.0) { (finish) -> Void in
@@ -19,7 +19,7 @@ public class RotateIn: BaseAnimate{
     }
 }
 public class RotateInDownLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
@@ -31,7 +31,7 @@ public class RotateInDownLeft: BaseAnimate{
     }
 }
 public class RotateInDownRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(1.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(-1.0))
@@ -45,7 +45,7 @@ public class RotateInDownRight: BaseAnimate{
 
 
 public class RotateInUpLeft: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(0.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_4 * (1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
@@ -59,7 +59,7 @@ public class RotateInUpLeft: BaseAnimate{
 
 
 public class RotateInUpRight: BaseAnimate{
-    override func play(view: UIView, type: String, duration: Double) {
+    override public func play(view: UIView, type: String, duration: Double) {
         view.alpha = 0
         view.setAnchorPoint( CGPointMake(1.0, 1.0))
         view.layer.transform = CATransform3DMakeRotation( CGFloat(M_PI_2 * (-1.0)),  CGFloat(0.0),  CGFloat(0.0), CGFloat(1.0))
