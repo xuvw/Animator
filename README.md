@@ -8,7 +8,9 @@ working in progress
 
 ## Animator
 
-https://daneden.github.io/animate.css/ 的 Swift 实现
+[Animate.css](https://daneden.github.io/animate.css/) 的 Swift 实现
+
+还在完成中，虽然代码很糟糕但还是可以用的 。 ლ(╹◡╹ლ)
 
 FadeIn, FadeOut, ZoomIn, ZoomOut, SlideIn, SlideOut, ZoomIn, ZoomOut, RotateIn, RotateOut, Flip,BounceIn, BounceOut,Attention, Speed, Special 效果。
 
@@ -16,8 +18,20 @@ FadeIn, FadeOut, ZoomIn, ZoomOut, SlideIn, SlideOut, ZoomIn, ZoomOut, RotateIn, 
 
 ## 使用
 
+
+在你的 Podfile 中加入
+
+```
+pod 'Animator', :git => 'https://github.com/oa414/Animator.git', :tag => '0.0.5'
+```
+
+运行 pod install，在你的类中 import Animator;就可以使用啦。
+
+
+```
    ZoomIn().play(myView, duration:0.8)
    BounceOutRight().play(myView, duration: 0.3)
+```
 
 ## 开发计划
 
